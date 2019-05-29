@@ -1,5 +1,5 @@
 @foreach($topics as $topic)
-    <a href="/topics/{{ $topic->id}}">{{ $post->title }}</a>
+    <a href="/topics/{{ $topic->id}}">{{ $topic->title }}</a>
 @endforeach
 
 <form method="POST" action="/topics">

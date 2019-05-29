@@ -41,6 +41,7 @@ class TopicController extends Controller
 
         $topic->title = $request->input('title');
         $topic->content = $request->input('content');
+        $topic->save();
 
         return redirect()->route('topics.index');
     }
