@@ -37,7 +37,12 @@ class TopicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $topic = new Topic();
+
+        $topic->title = $request->input('title');
+        $topic->content = $request->input('content');
+
+        return redirect()->route('topics.index');
     }
 
     /**
