@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resources('topics', 'TopicController');
+Route::resource('topics', 'TopicController');
